@@ -1,0 +1,30 @@
+@use "../mixins";
+.article {
+    &__inner {
+        display: flex;
+        justify-content: center;
+        width: 11920px;
+        margin: 0 auto;
+        padding: 135px 877px 134px 388px;
+        @include mixins.background-img(100%,100%,"../../images/article-bg.png",center,center);
+    }
+    &__title-wrapper {
+        position: relative;
+        width: 559px;
+      
+    }
+    &__title {
+        margin: 0;
+        color: #fff;
+        font-family: "Volkhov";
+        font-size: 50px;
+        &::after {
+            @include mixins.psevdo-el(312px,41px,"../../images/article-line.svg");
+            position: absolute;
+            bottom: -48px;
+            right: -67px;
+            transform: rotate(5.536deg);
+        }
+    }
+    
+}

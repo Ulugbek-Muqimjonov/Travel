@@ -1,0 +1,128 @@
+@use "../mixins";
+.say {
+    padding-top: 125px;
+    padding-bottom:113px;
+    background-image: url("../../images/saybg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__title-wrapper {
+        width: 639px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+    &__title {
+        margin: 0;
+        color: #181E4B;
+        text-align: center;
+        font-family: "Volkhov",Arial,sans-serif;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 71.042px;
+        &::before {
+            display: block;
+            text-align: center;
+            color: #DF6951;
+            text-align: center;
+            font-family: "Poppins",Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.8px;
+            content:"PROMOTION";
+        }
+    }
+    &__karusel-list {
+        display: block;
+        @include mixins.unstyled-list();
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 538px;
+        height: 277px;
+    }
+    &__karusel-item {
+        position: relative;
+        text-align: center;
+        padding: 64px 72px 71px 73px;
+        color:#000;
+        font-size: 12.224px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24.449px;
+        letter-spacing: 0.611px;
+        background-color: #fff;
+        background-image: url("../../images/karulsel.png");
+        background-repeat: no-repeat;
+        background-size: 82px;
+        background-position: calc(50% - 195px) calc(50% - 63px);
+        border-radius: 17px;
+        
+        &::before {
+            position: absolute;
+            top: -53px;
+            left: 198px;
+            z-index: 5;
+            @include mixins.psevdo-el(120px,120px,"../../images/karusel-before.svg");
+        }
+    }
+}
+.slick-track {
+    padding-top: 50px;
+}
+.slick-next {
+    z-index: 5;
+    width: 62px;
+    height: 62px;
+    top: 60%;
+    background-color: #737373;
+    background-image: url("../../images/karusel-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    &::before {
+        display: none;
+    }
+    &:hover {
+        background-color:#737373 ;
+        background-image: url("../../images/karusel-right.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+    }
+    &:focus {
+        background-color:#737373 ;
+        background-image: url("../../images/karusel-right.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+    }
+}
+.slick-prev {
+    width: 62px;
+    height: 62px;
+    top: 60%;
+    z-index: 2;
+    background-color: #737373;
+    background-image: url("../../images/karusel-left.svg");
+    background-position: center;
+    background-repeat:no-repeat;
+    border-radius: 50%;
+    &::before {
+        display: none;
+    }
+    &:hover {
+        background-color:#737373 ;
+        background-image: url("../../images/karusel-left.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+    }
+    &:focus {
+        background-color:#737373 ;
+        background-image: url("../../images/karusel-left.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+    }
+}

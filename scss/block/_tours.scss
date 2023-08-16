@@ -1,0 +1,92 @@
+@use "../mixins";
+.tours {
+    display: flex;
+    justify-content: center;
+    &__wrapper {
+        display: flex;
+        column-gap: 263px;
+        margin: 0 auto;
+        padding: 0 20px;
+        padding-top: 121px;
+        padding-left: 157px;
+        padding-bottom: 150px;
+    }
+    &__div {
+        position: relative;
+        width: 639px;
+    }
+    &__title {
+        margin: 0;
+        margin-bottom: 19px;
+        color: #181e4b;
+        font-family: "Volkhov";
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 71.042px;
+        &::before {
+            display: block;
+            margin-bottom: 2px;
+            color: #df6951;
+            font-family: "Poppins";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.8px;
+            content: "PROMOTION";
+        }
+    }
+    &__desc {
+        margin: 0;
+        margin-bottom: 31px;
+        color: #000;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    &__link {
+        padding-top: 16px;
+        padding-right: 37px;
+        padding-bottom:20px;
+        padding-left: 6px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 16.716px;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 10px;
+        background: #DF6951;
+        box-shadow: 0px 20px 35px 0px #df695126;
+    }
+    &__tower-list {
+        position: absolute;
+        z-index:2;
+        bottom:57px;
+        left: 0;
+        @include mixins.unstyled-list($col:56px);
+    }
+    &__tower-item {
+        position: relative;
+       &::before {
+        position:absolute; 
+        top: 15px;
+        right: 16px;      
+        padding: 6px 22px;
+        color: #fff;
+        text-align: center;
+        border-radius: 20px;
+        border-radius: 46px;
+        background: linear-gradient(136deg, #FF7255 0%, #BA4E38 100%);
+        content: "$700";
+       }
+       &:nth-child(2)::before {
+        content: "$800";
+       }
+       &:nth-child(3)::before {
+        content: "$500";
+       }
+       &:nth-child(4)::before {
+        content: "$400";
+       }
+    }
+}

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Travel & Tour</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__wrapper">
+                <a class="logo__link" href="./index.html">
+                    <img class="logo__img" src="./images/logo.svg" alt="site logo">
+                </a>
+                <nav class="site-header__navigation">
+                    <ul class="site-header__nav-list">
+                        <li class="site-header__nav-item">
+                            <a class="site-header__nav-link" href="#">Home</a>
+                        </li>
+                        <li class="site-header__nav-item">
+                            <a class="site-header__nav-link " href="#">About</a>
+                        </li>
+                        <li class="site-header__nav-item site-header__nav-item--only">
+                            <a class="site-header__nav-link site-header__nav-link--only" href="#">Services</a>
+                            <ul class="site-header__hide-list">
+                                <li class="site-header__hide-item">
+                                    <a class="site-header__hide-link" href="#">Honeymoon packagess</a>
+                                </li>
+                                <li class="site-header__hide-item">
+                                    <a class="site-header__hide-link" href="#">Tours packagess</a>
+                                </li>
+                                <li class="site-header__hide-item">
+                                    <a class="site-header__hide-link" href="#">Musical Events</a>
+                                </li>
+                                <li class="site-header__hide-item">
+                                    <a class="site-header__hide-link" href="#">Build packages</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="site-header__nav-item">
+                            <a class="site-header__nav-link" href="#">Upcomming packagess</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="site-header__link" href="#">Get in Touch</a>
+            </div>
+        </div>
+        <section class="site-main__hero hero">
+            <div class="container">
+                <div class="hero__title-wrapper">
+                    <h1 class="hero__title">No matter where you’re going to, we’ll take you there</h1>
+                </div>
+                <form class="hero__form" action="">
+                    <input class="hero__cuntry-inp" type="text" name="user__selct country" aria-label="enter Travel country" placeholder="Where to?" autocomplete="off" required>
+                    <div class="hero__form-selection-wrap">
+                        <select name="travel_type" class="hero__form-selection" >
+                            <option class="hero__form-option" value="" selected disabled hidden style="color: #fff;">Travel Type</option>
+                            <option class="hero__form-option" value="simple">Simple</option>
+                            <option class="hero__form-option" value="pro">Pro</option>
+                            <option class="hero__form-option" value="promax">Promax</option>
+                        </select>
+                    </div>
+                    <div class="hero__form-selection-duration-wrap">
+                        <select name="travel_duration" class="hero__form-selection-duration" >
+                            <option class="hero__form-option hero__form-option--duration" value="" selected disabled hidden>Duration</option>
+                            <option class="hero__form-option hero__form-option--duration" value="7">a week</option>
+                            <option class="hero__form-option hero__form-option--duration" value="14">two week</option>
+                            <option class="hero__form-option hero__form-option--duration" value="21">three week</option>
+                            <option class="hero__form-option hero__form-option--duration" value="31">a month</option>
+                            <option class="hero__form-option hero__form-option--duration" value="62">two month</option>
+                            <option class="hero__form-option hero__form-option--duration" value="92">three month</option>
+                            <option class="hero__form-option hero__form-option--duration" value="124">four month</option>
+                            <option class="hero__form-option hero__form-option--duration" value="155">five month</option>
+                            <option class="hero__form-option hero__form-option--duration" value="186">six month</option>
+                            <option class="hero__form-option hero__form-option--duration" value="217">seven month</option>
+                            <option class="hero__form-option hero__form-option--duration" value="248">eight month</option>
+                            <option class="hero__form-option hero__form-option--duration" value="279">nine month</option>
+                            <option class="hero__form-option hero__form-option--duration" value="310">ten month</option>
+                            <option class="hero__form-option hero__form-option--duration" value="341">eleven month</option>
+                            <option class="hero__form-option hero__form-option--duration" value="365">a year</option>
+                        </select>
+                    </div>
+                    <button class="hero__formbtn">Submit</button>
+                </form>
+                <div class="hero__user-list-wrap">
+                    <ul class="hero__user-list">
+                        <li class="hero__user-item">
+                            <img src="./images/person1.svg" alt="this our user img">
+                        </li>
+                        <li class="hero__user-item">
+                            <img src="./images/person2.svg" alt="this our user img">
+                        </li>
+                        <li class="hero__user-item">
+                            <img src="./images/person3.svg"  alt="this our user img">
+                        </li>
+                        <li class="hero__user-item">
+                            <img src="./images/person4.svg" alt="this our user img">
+                        </li>
+                        <li class="hero__user-item">
+                            <img src="./images/person5.svg" alt="this our user img">
+                        </li>
+                        <li class="hero__user-item">
+                            <img src="./images/person6.svg" alt="this our user img">
+                        </li>
+                        <li class="hero__user-item hero__user-item--add">
+                            +
+                        </li>
+                    </ul>
+                    <span class="hero__user-list-span">2,500 people booked Tommorowland Event in last 24 hours</span>
+                </div>
+            </div> 
+        </section>
+    </header>
+    <aside class="site-aside">
+        <div class="site-aside__wrapper">
+            <ul class="site-aside__list">
+                <li class="site-aside__item">
+                    <a href="#" class="site-aside__link">
+                        <img class="site-aside__img"  src="./images/fly Emirates.svg"  width="143" height="50"  alt="this is fly Emirates logo">
+                    </a>
+                </li>
+                <li class="site-aside__item">
+                    <a href="#" class="site-aside__link">
+                        <img class="site-aside__img" src="./images/trivago.svg"  width="165" height="50" alt="this is trivago logo">
+                    </a>
+                </li>
+                
+                <li class="site-aside__item">
+                    <a href="#" class="site-aside__link">
+                        <img class="site-aside__img" src="./images/airbnb.svg" width="160" height="50" alt="this is airbnb logo">
+                    </a>
+                </li>
+                <li class="site-aside__item">
+                    <a href="#" class="site-aside__link">
+                        <img class="site-aside__img" src="./images/turkish.svg"  width="172" height="50"  alt="">
+                    </a>
+                </li>
+                <li class="site-aside__item">
+                    <a href="#" class="site-aside__link">
+                        <img class="site-aside__img" src="./images/swiss.svg"  width="221" height="50" alt="this is swiss logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <main class="site-main">
+        <section class="site-main__services services">
+            <div class="container">
+                <h2 class="services__title">We Offer Best Services</h2>
+                <ul class="services__list">
+                    <li class="services__item">
+                        <a class="services__link" href="#">
+                            <img src="./images/1.svg" alt="" class="services__item-img">
+                            <h3 class="services__item-title">Guided Tours</h3>
+                            <p class="services__item-desc">sunt qui repellat saepe quo velit aperiam id aliquam placeat.</p>
+                        </a>
+                    </li>
+                    <li class="services__item">
+                        <a class="services__link" href="#">
+                            <img src="./images/2.svg"  alt="" class="services__item-img">
+                            <h3 class="services__item-title">Best Flights Options</h3>
+                            <p class="services__item-desc">sunt qui repellat saepe quo velit aperiam id aliquam placeat.</p>
+                        </a>
+                    </li>
+                    <li class="services__item">
+                        <a class="services__link" href="#">
+                            <img src="./images/3.svg" alt="" class="services__item-img">
+                            <h3 class="services__item-title">Religious Tours</h3>
+                            <p class="services__item-desc">sunt qui repellat saepe quo velit aperiam id aliquam placeat.</p>
+                        </a>
+                    </li>
+                    <li class="services__item">
+                        <a class="services__link" href="#">
+                            <img src="./images/4.svg" alt="" class="services__item-img">
+                            <h3 class="services__item-title">Medical insurance</h3>
+                            <p class="services__item-desc">sunt qui repellat saepe quo velit aperiam id aliquam placeat.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="site-main-topical topical">
+            <div class="topical__wrapper">
+                <img src="./images/topical-img.png" alt="this is our topical travel picture" width="688" height="787">
+                <div class="topical__innerdiv">
+                    <h2 class="topical__title">Our Romantic Tropical Destinations</h2>
+                    <p class="topical__desc">Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos. Non quis eius quo eligendi corrupti et fugiat nulla qui soluta recusandae in maxime quasi aut ducimus illum aut optio quibusdam!</p>
+                    <a class="topical__link" href="">View packagess</a>
+                </div> 
+            </div>
+        </section>
+        <section class="site-main__resorts resorts">
+            <div class="resorts__container">
+                <div class="resorts__wrapper">
+                    <div class="resorts__div">
+                        <h2 class="resorts__title">Get Your Favourite Resort Bookings</h2>
+                        <ol class="resorts__list">
+                            <li class="resorts__item">
+                                <div class="resorts__item-div">
+                                    <h3 class="resorts__item-title">Choose Destination</h3>
+                                    <p class="resorts__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                                </div>
+                            </li>
+                            <li class="resorts__item">
+                                <div class="resorts__item-div">
+                                    <h3 class="resorts__item-title">Check Availability</h3>
+                                    <p class="resorts__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                                </div>
+                            </li>
+                            <li class="resorts__item">
+                                <div class="resorts__item-div">
+                                    <h3 class="resorts__item-title">Let’s Go</h3>
+                                    <p class="resorts__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <img src="./images/resort-bg.png" alt="there is plane picture and statistic" width="879" height="600">
+                </div>
+            </div>
+        </section>
+        <article class="site-main__article article">
+            <div class="article__inner">
+                <div class="article__title-wrapper">
+                    <h2 class="article__title">Let’s Make Your <br> Next Holiday Amazing</h2>
+                </div>
+            </div>
+        </article>
+        <section class="site-main-tours tours">
+            <div class="tours__wrapper">
+                <div class="tours__div">
+                    <h2 class="tours__title">We Provide You Best Europe Sightseeing Tours</h2>
+                    <p class="tours__desc">Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos. Non quis eius quo eligendi corrupti et fugiat nulla qui soluta recusandae in maxime quasi aut ducimus illum aut optio quibusdam!</p>
+                    <a class="tours__link" href="#">View packagess</a>
+                    <ul class="tours__tower-list">
+                        <li class="tours__tower-item">
+                            <img class="tours__item-img" src="./images/tower1.png" width="231" height="237" alt="">
+                        </li>
+                        <li class="tours__tower-item">
+                            <img class="tours__item-img" src="./images/tower2.png" width="231" height="237" alt="">
+                        </li>
+                        <li class="tours__tower-item">
+                            <img class="tours__item-img" src="./images/tower3.png" width="231" height="237" alt="">
+                        </li>
+                        <li class="tours__tower-item">
+                            <img class="tours__item-img" src="./images/tower4.png" width="231" height="237" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <img class="tours__img" src="./images/efil.png" alt="this efil tower" width="573" height="764">
+                
+            </div>
+        </section>
+        <article class="site-main__article2 article2">
+            <div class="article2__wrapper">
+                <div class="article2__innerdiv1">
+                    <h3 class="article2__title">Explore Nature</h3>
+                    <a class="article2__link" href="#">View packagess</a>
+                </div>
+                <div class="article2__innerdiv2">
+                    <h3 class="article2__title article2__title--two">Explore Cities</h3>
+                    <a class="article2__link" href="#">View packagess</a>
+                </div>
+            </div>
+        </article>
+        <section class="site-main__packages packages">
+            <div class="packages__wrapper">
+                <div class="packages__title-wrap">
+                    <h2 class="packages__title">Our Trending Tour packagess</h2>
+                </div>
+                <ul class="packages__list">
+                    <li class="packages__item">
+                        <img class="packages__item-img" src="./images/package1.png" alt="">
+                        <div class="packages__item-wrap">
+                            <span class="packages__item-span packages__item-span--day">8 days</span>
+                            <span class="packages__item-span packages__item-span--people">25 People going</span>
+                        </div>
+                        <h3 class="packages__item-title">Switzerland</h3>
+                        <span class="packages__item-location">Europe</span>
+                        <div class="packages__item-price-wrap">
+                            <span class="packages__new-price">1,000 $</span>
+                            <del class="packages__old-price">1,200 $</del>
+                        </div>
+                        <p class="packages__item-desc">Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos.</p>
+                        <a class="packages__item-link" href="#">Explore Now</a>
+                        
+                    </li>
+                    <li class="packages__item">
+                        <img class="packages__item-img" src="./images/package2.png" alt="">
+                        <div class="packages__item-wrap">
+                            <span class="packages__item-span packages__item-span--day">8 days</span>
+                            <span class="packages__item-span packages__item-span--people">30 People going</span>
+                        </div>
+                        <h3 class="packages__item-title">Amazon</h3>
+                        <span class="packages__item-location">Brazil</span>
+                        <div class="packages__item-price-wrap">
+                            <span class="packages__new-price">1,223 $</span>
+                            <del class="packages__old-price">1,200 $</del>
+                        </div>
+                        <p class="packages__item-desc">Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos.</p>
+                        <a class="packages__item-link" href="#">Explore Now</a>
+                        
+                    </li>
+                    <li class="packagess__item">
+                        <img class="packages__item-img" src="./images/package3.png" alt="">
+                        <div class="packages__item-wrap">
+                            <span class="packages__item-span packages__item-span--day">8 days</span>
+                            <span class="packages__item-span packages__item-span--people">155 People going</span>
+                        </div>
+                        <h3 class="packages__item-title">Giza</h3>
+                        <span class="packages__item-location">Egypt</span>
+                        <div class="packages__item-price-wrap">
+                            <span class="packages__new-price">1,200 $</span>
+                            <del class="packages__old-price">1,200 $</del>
+                        </div>
+                        <p class="packages__item-desc">Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos.</p>
+                        <a class="packages__item-link" href="#">Explore Now</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="site-main__say say">
+            <div class="say__wrapper">
+                <div class="container">
+                    <div class="say__title-wrapper">
+                        <h2 class="say__title">
+                            See What Our Clients Say About Us
+                        </h2>
+                    </div>
+                    <ul class="say__karusel-list">
+                        <li class="say__karusel-item">Vel officiis dolor ea illo aut eligendi ullam non laudantium magnam et recusandae molestiae sit iure unde aut voluptate quaerat. Id sunt provident quo possimus impedit vel doloremque obcaecati qui ullam consectetur et ipsum omnis.</li>
+                        <li class="say__karusel-item">Vel officiis dolor ea illo aut eligendi ullam non laudantium magnam et recusandae molestiae sit iure unde aut voluptate quaerat. Id sunt provident quo possimus impedit vel doloremque obcaecati qui ullam consectetur et ipsum omnis.</li>
+                        <li class="say__karusel-item">Vel officiis dolor ea illo aut eligendi ullam non laudantium magnam et recusandae molestiae sit iure unde aut voluptate quaerat. Id sunt provident quo possimus impedit vel doloremque obcaecati qui ullam consectetur et ipsum omnis.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        
+        
+    </main>
+    <footer class="site-footer">
+        <div class="site-footer__wrap">
+            <div class="container">
+                <div class="site-footer__top">
+                    <div class="site-footer__innerdiv1">
+                        <a class="logo__link" href="./index.html">
+                            <img class="logo__img" src="./images/footer-logo.svg" alt="site-logo">
+                        </a>
+                        <p class="site-footer__desc">Travel helps companies manage payments easily.</p>
+                        <ul class="site-footer__app-list">
+                            <li class="site-footer__app-item">
+                                <a class="site-footer__app-link" href="#">
+                                    <img class="site-footer__app-img" src="./images/linkedin.png" alt="">
+                                </a>
+                            </li>
+                            <li class="site-footer__app-item">
+                                <a class="site-footer__app-link" href="#">
+                                    <img class="site-footer__app-img" src="/images/messenger.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="site-footer__app-item">
+                                <a class="site-footer__app-link" href="#">
+                                    <img class="site-footer__app-img" src="./images/twitter.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="site-footer__app-item">
+                                <a class="site-footer__app-link" href="#">
+                                    <img class="site-footer__app-img" src="./images/twoo.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="site-footer__links-wrap">
+                        <div class="site-footer__links1">
+                            <strong class="site-footer__link-bold">Company</strong>
+                            <ul class="site-footer__link-list">
+                                <li class="site-footer__link-item">
+                                    <a class="site-footer__link" href="#">About Us</a>
+                                </li>
+                                <li class="site-footer__link-item">
+                                    <a class="site-footer__link" href="#">Careers</a>
+                                </li>
+                                <li class="site-footer__link-item">
+                                    <a class="site-footer__link" href="#">Blog</a>
+                                </li>
+                                <li class="site-footer__link-item">
+                                    <a class="site-footer__link" href="#">Pricing</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="site-footer__links2">
+                            <strong class="site-footer__link-bold">Destinations</strong>
+                            <ul class="site-footer__link-list">
+                                <li class="site-footer__link-item">
+                                    <a class="site-footer__link" href="#">Maldives</a>
+                                </li>
+                                <li class="site-footer__link-item">
+                                    <a class="site-footer__link" href="#">Los Angelas</a>
+                                </li>
+                                <li class="site-footer__link-item">
+                                    <a class="site-footer__link" href="#">Las Vegas</a>
+                                </li>
+                                <li class="site-footer__link-item">
+                                    <a class="site-footer__link" href="#">Torronto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <form class="site-footer__form">
+                        <strong class="site-footer__form-bold">Join Our Newsletter</strong>
+                        <div class="site-footer__inp-wrap">
+                            <input class="site-footer__form-email" type="email" placeholder="Your email address" aria-label="enter your email" required autocomplete="off">
+                            <button class="site-footer__btn">Subscribe</button>
+                        </div>
+                        <div class="site-footer__desc-wrap">
+                            <p class="site-footer__form-desc">Will send you weekly updates for your better tour packages.</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="site-footer__bottom">
+                    <span class="site-footer__span">Copyright @ Xpro 2022. All Rights Reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+  
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.say__karusel-list').slick();
+    </script>
+</body>
+</html>

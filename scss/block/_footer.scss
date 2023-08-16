@@ -1,0 +1,137 @@
+@use "../mixins";
+.site-footer {
+    background-image: url("../../images/Footer\ img.png");
+    background-position-y:bottom;
+    background-position-x:calc(50% + 600px) ;
+    background-repeat: no-repeat;
+    &__top {
+        @include mixins.display($direc:row,$x:flex-start,$y:flex-start);
+        padding-top: 100px;
+        padding-bottom: 59px;
+        border-bottom:2px solid #E5E5EA;
+                
+    }
+    &__innerdiv1 {
+        width: 181px;
+        margin-right: 100px;
+    }
+    &__app-list {
+        @include mixins.unstyled-list($col:16px);
+    }
+    &__desc {
+        margin: 0;
+        margin-bottom: 31px;
+        color: #757095;
+        font-family: "Manrope";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: -0.32px;
+    }
+    &__links-wrap {
+        display: flex;
+        align-items: center;
+        column-gap: 137px;
+        margin-right: 156px;
+        padding-top: 20px;
+    }
+    &__link-list {
+        @include mixins.unstyled-list($row:18px);
+        flex-direction: column;
+    }
+    &__link-bold {
+        display: inline-block;
+        margin-bottom: 24px;
+        color: #181433;
+        font-family: "Manrope";
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    &__link {
+        text-decoration: none;
+        color: #181433;
+        font-family: "Manrope";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px; 
+    }
+    &__form {
+        width: 389px;
+        padding-top: 20px;
+    }
+    &__form-bold {
+        display: block;
+        margin-bottom: 20px;
+        color: #181433;
+        font-family: "Manrope";
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    &__inp-wrap {
+        display: flex;
+        align-items: center;
+        margin-bottom: 21px;
+    }
+    &__form-email {
+        width: 240px;
+        padding: 14px 15px 12px;
+        background-color:#eef;
+        font-family: "Manrope";
+        border: none;
+        &::placeholder {
+            opacity: 0.2    ;
+            color: #181433;
+            font-family: "Manrope";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: -0.32px;
+        }
+    }
+    &__btn {
+        padding: 12px 32px 12px 43px;
+        border-radius: 10px;
+        border: none;
+        background: #DF6951;
+        box-shadow: 0px 20px 35px 0px rgba(223, 105, 81, 0.15);
+        color: #fff;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: -0.32px;
+    }
+    &__desc-wrap {
+        width: 330px;
+    }
+    &__form-desc {
+        margin: 0;
+        color: #181433;
+        font-family: "Manrope";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: -0.32px;
+        opacity: 0.5;
+        &::before {
+            display: inline-block;
+            margin-right: 7px;
+            width: auto;
+            height: auto;
+            content: "*";
+        }
+    }
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 44px;
+    }
+    
+}

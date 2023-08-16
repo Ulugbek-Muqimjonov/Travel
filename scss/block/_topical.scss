@@ -1,0 +1,58 @@
+@use "../mixins";
+.topical {
+    padding-top: 204px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1440px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    &__title {
+        margin: 0;
+        margin-bottom: 20px;
+        color: #181e4b;
+        font-size: 50px;
+        font-family: "Volkhov";
+        font-style: normal;
+        font-weight: 700;
+        line-height: 71.042px;
+        &::before {
+            display: block;
+            margin-bottom: 2px;
+            color: #DF6951;
+            font-size: 18px;
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.8px;
+            content: "HONEYMOON SPECIALS";
+        }        
+    }
+    &__innerdiv {
+        width: 583px;
+        text-align: left; 
+    }
+    &__desc {
+        margin: 0;
+        margin-bottom: 31px;
+    }
+    &__link {
+        padding-top: 16px;
+        padding-right: 37px;
+        padding-bottom:20px;
+        padding-left: 6px;
+        color: #fff;;
+        text-align: center;
+        font-size: 16.716px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border-radius: 10px;
+        background-color: #df6951;
+        box-shadow: 0px 20px 35px 0px #df695126;
+        text-decoration: none;  
+    }
+}

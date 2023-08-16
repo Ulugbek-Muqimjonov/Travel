@@ -1,0 +1,118 @@
+@use "../mixins";
+.packages {
+    width:1420px;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-top: 112px;
+    padding-bottom: 110px;
+    &__title-wrap {
+        width: 550px;
+        margin: 0 auto;
+    }
+    &__title {
+        margin: 0;
+        margin-bottom: 51px;
+        text-align: center;
+        color: #181e4b;
+        font-size: 50px;
+        font-family: "Volkhov";
+        font-style: normal;
+        font-weight: 700;
+        line-height: 71.042px;
+        &::before {
+            display: block;
+            color: #df6951;
+            text-align: center;
+            font-family: "Poppins";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.8px;
+            content: "TRENDY";
+        }
+    }
+    &__item-wrap {
+        display: flex;
+        column-gap:35px;
+    }
+    &__list {
+        @include mixins.unstyled-list($col:100px);
+        justify-content: center;
+    }
+    &__item {
+        width: 392px;
+    }
+    &__item-img {
+        position: relative;
+        margin-bottom: 39px;
+        &::after {
+            @include mixins.psevdo-el(76px,76px,"../../images/tour-before1.svg");
+        }
+    }
+    &__item-span {
+        display: block;
+        position: relative;
+        margin-bottom: 9px;
+        color: #7d7d7d;
+        text-align: center;
+        font-size: 16.809px;
+    }
+    // &__item-span--day {
+        //     // @include mixins.psevdo-el(24px,24px,"../../images/days-before.svg");
+        // }
+        &__item-title {
+            margin: 0;
+            margin-bottom: 4px;
+            color: #2f2f2f;
+            font-size: 29.033px;
+        }
+        &__item-location {
+            display: inline-block;
+            margin-bottom: 10px;
+            color: #7d7d7d;
+            font-size: 16.809px;
+        }
+        &__item-price-wrap {
+            display: flex;
+            align-items: center;
+            column-gap: 21px;
+            margin-bottom: 4px;
+        }
+        &__new-price {
+            display: inline-block;
+            color: #df6951;
+            font-size: 29.033px;
+            font-weight: 500;
+        }
+        &__old-price {
+            color: #7d7d7d;
+            font-size: 22px;
+            font-weight: 500;
+        }
+        &__item-desc {
+            margin: 0;
+            margin-bottom: 45px;
+            color: #000;
+            font-size: 12.224px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24.449px;
+            letter-spacing: 0.611px;
+        }
+        &__item-link {
+            text-decoration: none;
+            padding-top: 13px;
+            padding-right: 37px;
+            padding-bottom:17px;
+            padding-left: 14px;
+            color: #fff;
+            font-size: 16.716px;
+            font-weight: 600;
+            text-align: center;
+            border-radius: 10px;
+            background: #DF6951;
+            box-shadow: 0px 20px 35px 0px #df695126;
+        }
+        
+    }

@@ -1,0 +1,12 @@
+@use "../mixins";
+.site-aside {
+    padding:75px 0;
+    background-color: #f7f7f7;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    &__list {
+        @include mixins.unstyled-list($col:179px);
+    }
+} 

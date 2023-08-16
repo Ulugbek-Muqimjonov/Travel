@@ -1,0 +1,109 @@
+@use "../mixins";
+.hero {
+    padding-top: 177px;
+    &__title-wrapper {
+        width: 631px;
+        margin-bottom: 37px;
+    }
+    &__title {
+        margin: 0;
+        color: #fff;
+        font-size: 58.506px;
+        font-style: normal;
+        line-height: 67.908px;
+        &::before {
+            @include mixins.psevdo-el(78px,16px,"../../images/title-before.svg");
+            display: block;
+            margin-bottom: 13px;
+        }
+    }
+    &__form {
+        display:flex;
+        column-gap: 55px;
+        align-items: center;
+        width: 844px;
+        margin-bottom: 28px;
+        padding: 23px 28px 22.6px 23px;
+        border-radius: 5.224px;
+        background: #f3f3f399;
+        backdrop-filter: blur(17.760618209838867px);
+    }
+    &__cuntry-inp {
+        width: 19%;
+        border: none;
+        background-color: transparent;
+        padding: 10px 0;
+        padding-left: 10px;
+        border: 3px solid transparent;
+        border-right-color: #d0d0d0;
+        outline: none;
+        &::placeholder {
+            color: #fff;
+            font-size: 18.805px;
+        }
+        &:focus {
+            border-bottom-color: #d0d0d0;
+            border-right-color:transparent;
+        }
+    }
+    &__form-selection-wrap {
+        padding: 23px 28px 22.6px 0;
+        border: 3px solid transparent;
+        border-right-color: #d0d0d0;
+    }
+    &__form-selection {
+        background-color: transparent;
+        border: none;
+    }
+    &__form-selection-duration-wrap {
+        padding: 23px 0 22.6px 0;
+        
+    }
+    &__form-selection-duration {
+        background-color: transparent;
+        border: none;
+    }
+    &__formbtn {
+        width: 172px;
+        height: 56px;
+        padding: 16px 57px; 
+        border-radius: 10px;
+        background: #DF6951;
+        box-shadow: 0px 20px 35px 0px rgba(223, 105, 81, 0.15);
+        border: none;
+        color: #fff ;
+        text-align: center;
+        font-size: 16.716px;
+        font-weight: 600;
+    }
+    &__user-list-wrap {
+        @include mixins.display($direc:row,$col:14px,$x:flex-start)
+    }
+    &__user-list {
+        display: inline-flex;
+        @include mixins.unstyled-list();
+        align-items: center;
+    }
+    &__user-item {
+        margin-left: -12px;
+    }
+    &__user-item--add {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #df6951;
+        color: #fff;
+        border: 2px solid #fff;
+    }
+    &__user-list-span {
+        color: #fff;
+        font-size: 12.537px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 37.611px; 
+    }
+    
+}

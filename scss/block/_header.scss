@@ -1,0 +1,92 @@
+@use "../mixins";
+.site-header {
+    padding-top: 60px;
+    padding-bottom: 239px;
+    background-image: url("../../images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__wrapper {
+        @include mixins.display($direc:row,$x:space-between,$y:center)
+    }
+    &__nav-list{
+        @include mixins.unstyled-list($col:50px)
+    }
+    &__nav-item {
+       border-bottom: 3px solid transparent;
+       transition: display 0.5s ease;
+       &:hover .site-header__nav-link {
+         text-decoration: underline 2px #df6951;
+       }
+    }
+    &__nav-item--only {
+        position: relative;
+        padding-bottom: 25px;
+        &:hover .site-header__hide-list {
+            display: flex;
+        }
+    }
+    &__hide-list {
+        position: absolute;
+        top: 50px;
+        left: -28px;
+        width: 230px;
+        @include mixins.unstyled-list();
+        @include mixins.display($y:flex-start,$row:14px);
+        display:none;
+        padding: 19px 44px 19px 16px;
+        background-color: #c1bfbe;        
+        border-radius: 16px;
+        transition: opacity 0.5s ease;
+        &::before {
+            position: absolute;
+            top: -40px;
+            left: 31px;
+            display: inline-block;
+            border:20px solid #c1bfbe;
+            border-left-color: transparent;
+            border-right-color:transparent;
+            border-top-color:transparent;
+            content: "";
+            
+        }
+    }
+    &__nav-item--only {
+        position: relative;
+    }
+    &__nav-link {
+        text-decoration: none;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 500;
+    }
+    &__nav-link--only {
+        &::after {
+            margin-left: 7px;
+            @include mixins.psevdo-el(12px,8px,"../../images/link-after.svg")
+        }
+    }
+    &__hide-item {
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.5s ease;
+        &:hover {
+            border-color: #df6951;
+        }
+    }
+    &__hide-link {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        line-height: normal;
+    }
+    &__link {
+        width: 152px;
+        padding: 18px 27px 17px 26px;
+        background-color: #df6951;
+        text-decoration: none;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 10px;
+    }
+}

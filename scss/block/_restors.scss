@@ -1,0 +1,82 @@
+@use "../mixins";
+.resorts {
+    &__container {
+        width: 1666px;
+        margin: 0 auto;
+        padding-left:290px;
+        padding-bottom: 81px;
+        display: flex;
+        justify-content: center;
+
+    }
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 154px;
+    }
+    &__div {
+        width: 458px;
+    }
+    &__title {
+        margin: 0;
+        margin-bottom: 31px;
+        text-align: left;
+        color: #181E4B;
+        font-family: "Volkhov";
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        &::before {
+            display: block;
+            margin-bottom: 15px;
+            color: #df6951;
+            font-family: "Poppins";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            content: "Fast & Easy";
+        }
+    }
+    &__list {
+        @include mixins.unstyled-list($row:42px);
+        flex-direction: column;
+    }
+    &__item {
+        width: 395px;
+        @include mixins.display(row,space-between,center,0,0);
+        &::before {
+            display: inline-block;
+            width: 47px;
+            height: 48px;
+            @include mixins.psevdo-el(47px,48px,"../../images/resorts1.svg");
+        }
+        &:nth-child(2)::before {
+            background-image: url("../../images/resorts2.svg");
+        }
+        &:nth-child(3)::before {
+            background-image: url("../../images/resorts3.svg");
+        }
+    }
+    &__item-div {
+        width: 327px;
+    }
+    &__item-title {
+        margin: 0;
+        margin-bottom: 4px;
+        color: #5e6282;
+        font-size: 16px;
+        line-height: 124.5%;
+    }
+    &__item-desc {
+        margin: 0;
+        color: #5e6282;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 124.5%; 
+    }
+}
